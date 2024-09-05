@@ -1,6 +1,6 @@
 import { Shape } from './shape'
 
-function circle(radius: number): Shape {
+function newCircle(radius: number): Shape {
     return {
         computeArea: function (): number {
             return Math.PI * radius * radius
@@ -8,4 +8,4 @@ function circle(radius: number): Shape {
     }
 }
 
-export { circle }
+export { newCircle }

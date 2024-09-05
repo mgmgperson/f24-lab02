@@ -1,20 +1,14 @@
 import { Shape } from './shape';
 
-interface Rectangle extends Shape{
-    width: number,
-    height: number,
-    computeArea: () => number
-}
 
-function newRectangle(width: number, height: number): Rectangle {
+function newRectangle(width: number, height: number): Shape {
+    let _width = width
+    let _height = height
     return {
-        width,
-        height,
-
         computeArea: function (): number {
-            return width * height
+            return _width * _height
         }
     }
 }
 
-export { Rectangle, newRectangle }
+export { newRectangle }
